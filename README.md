@@ -41,7 +41,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/ShahzebKhan0/weatherApp.git
+git clone https://github.com/shahzebkhan0/weatherApp.git
 
 # Navigate to the project folder
 cd weatherApp

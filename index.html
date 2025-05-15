@@ -20,13 +20,15 @@
                     <i class="fa-solid fa-magnifying-glass" onclick="weatherApp()"></i>
                 </button>
             </div>
-            <h2 id="WeatherText"></h2>
+            <h2 id="WeatherText">weather</h2>
             <div class="image">
                 <img src="/images/404.png" alt="weather">
             </div>
             <div class="weatherInfo" id="WeatherInfo">
-                <h3 id="Humidity">Humidity</h3>
-                <h3 id="Temp">Temperature</h3>
+                <h3 id="Temp">Temperature: <span id="ThisTemperature"></span></h3>
+                <h3 id="Humidity">Humidity: <span id="ThisHumidity"></span></h3>
+                <h3 id="windSpeed">wind speed: <span id="ThisWindSpeed"></span></h3>
+                <h3 id="pressure">pressure: <span id="THisPressuer"></span></h3>
             </div>
         </div>
     </main>
