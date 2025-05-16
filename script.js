@@ -37,19 +37,19 @@ async function weatherApp() {
 
     switch (data.weather[0].main) {
       case "Clear":
-        image.src = '/images/clear.png';
+        image.src = '/images/clear.webp';
         break;
       case "Clouds":
-        image.src = '/images/cloud.png';
+        image.src = '/images/cloud.webp';
         break;
       case "Rain":
-        image.src = '/images/rain.png';
+        image.src = '/images/rain.webp';
         break;
       case "Snow":
-        image.src = '/images/snow.png';
+        image.src = '/images/snow.webp';
         break;
       default:
-        image.src = '/images/404.png';
+        image.src = '/images/404.webp';
     }
 
     console.log(data);
