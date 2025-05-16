@@ -35,7 +35,7 @@ main {
 
 .weatherCard {
   padding: 12px;
-  height: 460px;
+  height: 480px;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.089);
   border-radius: 20px;
@@ -54,7 +54,7 @@ main {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .city__input__field #CityInput {
@@ -99,6 +99,7 @@ main {
 .image {
   width: 80%;
   height: 190px;
+  margin-bottom: 10px;
 }
 
 .image img {
@@ -118,10 +119,16 @@ main {
   background-color: #ffffff;
   padding: 15px;
   border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .weatherInfo h3 span {
-    color: rgb(63, 63, 255);
-    text-decoration: underline;
+  color: rgb(63, 63, 255);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#WeatherText {
+  font-size: 15px;
+  margin: auto 0 10px;
 }

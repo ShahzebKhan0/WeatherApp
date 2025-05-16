@@ -1,11 +1,15 @@
-async function weatherApp() {
+const WeatherInfo = document.getElementById("WeatherInfo");
+const WeatherText = document.getElementById("WeatherText");
+const ThisTemperature = document.getElementById("ThisTemperature");
+const ThisHumidity = document.getElementById("ThisHumidity");
+const ThisWindSpeed = document.getElementById("ThisWindSpeed");
+const THisPressuer = document.getElementById("THisPressuer");
+const image = document.querySelector(".image__404");
 
-  const WeatherInfo = document.getElementById("WeatherInfo");
-  const WeatherText = document.getElementById("WeatherText");
-  const ThisTemperature = document.getElementById("ThisTemperature");
-  const ThisHumidity = document.getElementById("ThisHumidity");
-  const ThisWindSpeed = document.getElementById("ThisWindSpeed");
-  const THisPressuer = document.getElementById("THisPressuer");
+
+
+
+async function weatherApp() {
   const CityInput = document.getElementById("CityInput").value.trim();
 
   if (CityInput === "") {
@@ -29,6 +33,24 @@ async function weatherApp() {
     ThisHumidity.innerHTML = `${data.main.humidity}%`;
     ThisWindSpeed.innerHTML = `${data.wind.speed} m/s`;
     THisPressuer.innerHTML = `${data.main.pressure} hPa`;
+
+
+    switch (data.weather[0].main) {
+      case "Clear":
+        image.src = '/images/clear.png';
+        break;
+      case "Clouds":
+        image.src = '/images/cloud.png';
+        break;
+      case "Rain":
+        image.src = '/images/rain.png';
+        break;
+      case "Snow":
+        image.src = '/images/snow.png';
+        break;
+      default:
+        image.src = '/images/404.png';
+    }
 
     console.log(data);
   } catch (error) {
