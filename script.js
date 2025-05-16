@@ -6,9 +6,6 @@ const ThisWindSpeed = document.getElementById("ThisWindSpeed");
 const THisPressuer = document.getElementById("THisPressuer");
 const image = document.querySelector(".image__404");
 
-
-
-
 async function weatherApp() {
   const CityInput = document.getElementById("CityInput").value.trim();
 
@@ -34,23 +31,15 @@ async function weatherApp() {
     ThisWindSpeed.innerHTML = `${data.wind.speed} m/s`;
     THisPressuer.innerHTML = `${data.main.pressure} hPa`;
 
+    const weatherImages = {
+      Clear: "/images/clear.webp",
+      Clouds: "/images/clouds.webp",
+      Rain: "/images/rain.webp",
+      Snow: "/images/snow.webp",
+    };
 
-    switch (data.weather[0].main) {
-      case "Clear":
-        image.src = '/images/clear.webp';
-        break;
-      case "Clouds":
-        image.src = '/images/cloud.webp';
-        break;
-      case "Rain":
-        image.src = '/images/rain.webp';
-        break;
-      case "Snow":
-        image.src = '/images/snow.webp';
-        break;
-      default:
-        image.src = '/images/404.webp';
-    }
+    const weatherType = data.weather[0].main;
+    image.src = weatherImages[weatherType] || "/images/404.webp";
 
     console.log(data);
   } catch (error) {
