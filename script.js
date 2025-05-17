@@ -4,6 +4,7 @@ const ThisTemperature = document.getElementById("ThisTemperature");
 const ThisHumidity = document.getElementById("ThisHumidity");
 const ThisWindSpeed = document.getElementById("ThisWindSpeed");
 const THisPressuer = document.getElementById("THisPressuer");
+const ThisIsTempName = document.getElementById("ThisIsTempName");
 const image = document.getElementById("ImageImg");
 
 async function weatherApp() {
@@ -25,7 +26,7 @@ async function weatherApp() {
     }
 
     const data = await response.json();
-    WeatherText.innerHTML = `Weather in ${CityInput}: ${data.weather[0].main}`;
+    ThisIsTempName.innerHTML = `${CityInput}: ${data.weather[0].main}`;
     ThisTemperature.innerHTML = `${data.main.temp}°C`;
     ThisHumidity.innerHTML = `${data.main.humidity}%`;
     ThisWindSpeed.innerHTML = `${data.wind.speed} m/s`;

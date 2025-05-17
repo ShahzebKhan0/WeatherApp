@@ -1,10 +1,10 @@
 # ⛅ Weather App
 
-**Weather App** is a sleek and modern web application that displays real-time weather information in a beautiful and responsive interface. Just enter any city name or allow location access, and get instant weather updates with rich visuals and intuitive design.
+**Weather App** is a sleek and modern web application that displays real-time weather information in a beautiful and responsive interface. Just enter by country or city name, and get instant weather updates with rich visuals and intuitive design.
 
 ---
 
-![Weather App Preview](./assets/preview.png)
+![Weather App Preview](./images/clear.webp)
 
 ## 🌟 Features
 
@@ -17,7 +17,7 @@
 
 ## 🚀 Demo
 
-🔗 [Live Demo](https://your-live-demo-link.com)
+🔗 [Live Demo](./images/READMEimages&videos/README_video.mp4)
 
 ---
 
@@ -25,7 +25,7 @@
 
 | Home Screen | City Search | Mobile View |
 |-------------|-------------|-------------|
-| ![Home](./assets/home.png) | ![Search](./assets/search.png) | ![Mobile](./assets/mobile.png) |
+| ![Home](./images/READMEimages&videos/Blank_scre.webp) | ![Search](./images/READMEimages&videos/clouds_scre.webp) | ![Mobile](./images/READMEimages&videos/rainy_scre.webp) |
 
 ---
 

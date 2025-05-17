@@ -35,9 +35,9 @@ main {
 
 .weatherCard {
   padding: 12px;
-  height: 480px;
-  width: 300px;
-  background-color: rgba(0, 0, 0, 0.089);
+  height: 500px;
+  width: 320px;
+  background-color: transparent;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   border: 1px solid #ffffff;
@@ -51,18 +51,20 @@ main {
   display: flex;
   width: 100%;
   padding: 15px;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 }
 
 .city__input__field #CityInput {
-  width: 70%;
-  padding: 8px;
+  width: 85%;
+  padding: 10px;
   border: none;
   outline: none;
   border-radius: 10px;
+  font-weight: 500;
+  color: rgb(63, 63, 255);
 }
 
 .city__input__field #CityInput::placeholder {
@@ -72,13 +74,13 @@ main {
 }
 
 .city__input__field #SearchButton {
-  padding: 5px;
+  padding: 6px;
   cursor: pointer;
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 38px;
+  width: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,9 +98,16 @@ main {
   color: rgb(63, 63, 255);
 }
 
+#ThisIsTempName {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(63, 63, 255);
+  text-decoration: underline;
+}
+
 .image {
   width: 80%;
-  height: 190px;
+  height: 185px;
   margin-bottom: 10px;
 }
 
