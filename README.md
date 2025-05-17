@@ -8,7 +8,7 @@
 
 ## 🌟 Features
 
-- 🌍 Real-time weather updates by city name
+- 🌍 Real-time weather updates by country or city name
 - 🌡️ Displays temperature, humidity, wind speed & pressure
 - 🕒 Shows current time and dynamic weather icons
 - 💡 User-friendly error messages and loading indicators
