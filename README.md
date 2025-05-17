@@ -23,8 +23,8 @@
 
 ## 📸 Screenshots
 
-| Home Screen | City Search | Mobile View |
-|-------------|-------------|-------------|
+| Blank Search | Counrty Search | Country Search |
+|---------------|---------------|----------------|
 | ![Home](./images/READMEimages&videos/Blank_scre.webp) | ![Search](./images/READMEimages&videos/clouds_scre.webp) | ![Mobile](./images/READMEimages&videos/rainy_scre.webp) |
 
 ---
