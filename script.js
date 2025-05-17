@@ -8,13 +8,13 @@ const image = document.querySelector(".image__404");
 
 async function weatherApp() {
   const CityInput = document.getElementById("CityInput").value.trim();
+  const apiKey = "40716a6f11fb73481e0f4b82aba1209f";
 
   if (CityInput === "") {
     alert("Please enter a city name");
     return;
   }
 
-  const apiKey = "40716a6f11fb73481e0f4b82aba1209f";
   try {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${CityInput}&units=metric&appid=${apiKey}`
@@ -32,14 +32,14 @@ async function weatherApp() {
     THisPressuer.innerHTML = `${data.main.pressure} hPa`;
 
     const weatherImages = {
-      Clear: "/images/clear.webp",
-      Clouds: "/images/clouds.webp",
-      Rain: "/images/rain.webp",
-      Snow: "/images/snow.webp",
+      Clear: "./images/clear.webp",
+      Clouds: "./images/clouds.webp",
+      Rain: "./images/rain.webp",
+      Snow: "./images/snow.webp",
     };
 
     const weatherType = data.weather[0].main;
-    image.src = weatherImages[weatherType] || "/images/404.webp";
+    image.src = weatherImages[weatherType] || "./images/404.webp";
 
     console.log(data);
   } catch (error) {
